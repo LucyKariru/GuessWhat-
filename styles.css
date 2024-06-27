@@ -1,0 +1,165 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Comic sans-serif; /* Set a default font for the page */
+}
+
+header {
+    background-image: url('Images/millenial photo.jpg'); /* Path to your image */
+    background-size: cover; /* Makes the background image cover the whole header */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    position: relative; /* Allows for positioning the overlay text */
+    color: white; /* Sets the text color to white */
+    text-align: center; /* Centers the text */
+    height: 100vh; /* Makes the header full height of the viewport */
+    display: flex; /* Enables flexbox for centering content */
+    flex-direction: column; /* Aligns items vertically */
+    justify-content: center; /* Centers items vertically */
+    align-items: center; /* Centers items horizontally */
+}
+
+header h1 {
+    position: relative; /* Ensures the text is positioned relative to the header */
+    z-index: 1; /* Makes sure the text is above any pseudo-elements */
+    margin: 0; /* Removes default margin */
+    font-size: 5em; /* Increases the font size */
+    font-family: 'Georgia', serif; /* Changes the font family */
+    font-weight: bold; /* Makes the font bold */
+    line-height: 1.2; /* Adjusts the line height */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adds a shadow to the text */
+    padding: 0.5em; /* Adds some padding around the text */
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay */
+    z-index: 0; /* Ensures the overlay is below the text */
+}
+
+nav h1 {
+
+    z-index: 1; /* Makes sure the text is above any pseudo-elements */
+    margin: 0; /* Removes default margin */
+    font-size: 2em; /* Increases the font size */
+    font-family: Georgia; /* Changes the font family */
+    font-weight: bold; /* Makes the font bold */ 
+    padding: 0.5em; /* Adds some padding around the text */
+    text-align: left;
+    color: green
+    
+}
+
+nav {
+    background-color: #0b5d5f;
+    padding: 0.5em 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 1em;
+    align-items: center;
+}
+
+/* Targeting the section with id="About" */
+#About {
+    max-width: 800px; /* Adjust max-width as needed */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Example background color */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the h2 within #About */
+#About h2 {
+    font-size: 24px; /* Example font size */
+    font-weight: bold;
+    margin-bottom: 10px; /* Example margin */
+}
+
+/* Style the image within #About */
+#About img {
+    width: 100%; /* Ensure the image takes up 100% of its container width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Removes bottom margin */
+    margin-bottom: 20px; /* Example margin */
+}
+
+/* Style the p (paragraph) within #About */
+#About p {
+    font-size: 16px; /* Example font size */
+    line-height: 1.6; /* Example line height */
+    text-align: justify; /* Example text alignment */
+}
+
+/* Style the button within #About */
+#About .get-started {
+    background-color: #007bff; /* Example button background color */
+    color: white; /* Example text color */
+    padding: 10px 20px; /* Example padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px; /* Example margin */
+}
+
+#About .get-started:hover {
+    background-color: #0056b3; /* Example button background color on hover */
+}
+
+
+
+/* Image styles */
+.image {
+    flex: 1;
+    overflow: hidden; /* Ensures image doesn't overflow */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+.image img {
+    width: 100%; /* Ensure the image takes up 100% of its container width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Removes bottom margin */
+}
+
+
+
+
+.blog p {
+    text-align: right;
+    padding: 0.5em 0;
+    color: black;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+.get-started {
+    /* Add your styles here */
+    background-color: #0b5d5f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+
+footer {
+    background-color: #0b5d5f;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
